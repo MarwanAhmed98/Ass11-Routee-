@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- My Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Icon -->
+    <link rel="icon" href="./images/bookmark.png">
+    <title>Bookmark</title>
+</head>
+
+<body>
+    <div class="container Content text-center">
+        <div class="row">
+            <h1 class=" mt-5">Bookmarker</h1>
+            <p class="py-3 ">
+                ......................................................................................................................................................................................................................................................................................................................................................................................................
+            </p>
+            <h2><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark"></i>
+            </h2>
+        </div>
+    </div> <br>
+    <div class="container">
+        <div class="row">
+            <div class="Form mb-4">
+                <label class="pb-3 fw-bold" for="SiteName"><i class="fa-solid fa-book-bookmark me-2"></i>Site
+                    Name</label>
+                <input class="form-control w-80" type="text" id="SiteName" placeholder="Bookmark Name">
+            </div>
+            <div class="Form">
+                <label class="pb-3 fw-bold" for="SiteUrl"><i class="fa-solid fa-link-slash me-2"></i> Site URL</label>
+                <input class="form-control w-80" type="text" id="SiteUrl" placeholder="Website URL">
+            </div>
+        </div> <br>
+        <button class="d-block m-auto" id="SumbitButton" onclick="submit()">Submit</button>
+        <p class="py-3 ">
+            ......................................................................................................................................................................................................................................................................................................................................................................................................
+        </p>
+        <div class="table-responsive text-center">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
